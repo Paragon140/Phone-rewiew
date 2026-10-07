@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechPulse - Professional smartphone reviews, comparisons and buying guides.">
+    <title>TechPulse | Smartphone Reviews</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav">
+        <a href="#" class="logo">
+            <span>Tech</span>Pulse
+        </a>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#compare">Compare</a>
+            <a href="#guides">Buying Guides</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn">🌙</button>
+            <button id="menuToggle" class="menu-btn">☰</button>
+        </div>
+    </div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+            <span class="badge">📱 SMARTPHONE REVIEWS</span>
+
+            <h1>
+                Find the <span>perfect phone</span>
+                before you buy.
+            </h1>
+
+            <p>
+                Honest smartphone reviews, detailed specifications,
+                performance tests and buying advice — all in one place.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#reviews" class="btn primary">Explore Reviews</a>
+                <a href="#compare" class="btn secondary">Compare Phones</a>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <strong>250+</strong>
+                    <span>Phones Reviewed</span>
+                </div>
+
+                <div>
+                    <strong>98%</strong>
+                    <span>Reader Trust</span>
+                </div>
+
+                <div>
+                    <strong>45K+</strong>
+                    <span>Monthly Readers</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-phone">
+            <div class="phone">
+                <div class="camera"></div>
+                <div class="phone-screen">
+                    <div class="screen-time">9:41</div>
+                    <div class="screen-logo">TP</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SEARCH -->
+<section class="search-section">
+    <div class="container">
+
+        <div class="search-box">
+            <span>🔎</span>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a phone..."
+            >
+        </div>
+
+        <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="flagship">Flagship</button>
+            <button class="filter" data-filter="midrange">Midrange</button>
+            <button class="filter" data-filter="budget">Budget</button>
+            <button class="filter" data-filter="gaming">Gaming</button>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FEATURED REVIEWS -->
+<section class="section" id="reviews">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">LATEST REVIEWS</span>
+                <h2>Featured Phones</h2>
+            </div>
+
+            <a href="#" class="view-all">View all reviews →</a>
+        </div>
+
+
+        <div class="phone-grid" id="phoneGrid">
+
+            <!-- PHONE 1 -->
+            <article
+                class="phone-card"
+                data-category="flagship"
+                data-name="Samsung Galaxy S26 Ultra"
+            >
+
+                <div class="phone-image samsung">
+                    <span class="review-label">EDITOR'S CHOICE</span>
+                    <div class="product-phone">S26</div>
+                </div>
+
+                <div class="card-content">
+
+                    <div class="brand">SAMSUNG</div>
+
+                    <h3>Samsung Galaxy S26 Ultra</h3>
+
+                    <p>
+                        A powerful flagship with an excellent camera,
+                        display and all-day battery life.
+                    </p>
+
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <strong>9.5</strong>
+                        <span>/10</span>
+                    </div>
+
+                    <div class="card-footer">
+                        <span>From $1,199</span>
+                        <button onclick="openReview('Samsung Galaxy S26 Ultra')">
+                            Read Review →
+                        </button>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- PHONE 2 -->
+            <article
+                class="phone-card"
+                data-category="flagship"
+                data-name="iPhone 17 Pro Max"
+            >
+
+                <div class="phone-image iphone">
+                    <span class="review-label">TOP PICK</span>
+                    <div class="product-phone">17</div>
+                </div>
+
+                <div class="card-content">
+
+                    <div class="brand">APPLE</div>
+
+                    <h3>iPhone 17 Pro Max</h3>
+
+                    <p>
+                        Apple's premium smartphone delivers excellent
+                        performance, cameras and software support.
+                    </p>
+
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <strong>9.4</strong>
+                        <span>/10</span>
+                    </div>
+
+                    <div class="card-footer">
+                        <span>From $1,099</span>
+                        <button onclick="openReview('iPhone 17 Pro Max')">
+                            Read Review →
+                        </button>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- PHONE 3 -->
+            <article
+                class="phone-card"
+                data-category="midrange"
+                data-name="Google Pixel 10"
+            >
+
+                <div class="phone-image pixel">
+                    <span class="review-label">BEST CAMERA</span>
+                    <div class="product-phone">P10</div>
+                </div>
+
+                <div class="card-content">
+
+                    <div class="brand">GOOGLE</div>
+
+                    <h3>Google Pixel 10</h3>
+
+                    <p>
+                        A clean Android experience with impressive
+                        computational photography.
+                    </p>
+
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <strong>9.0</strong>
+                        <span>/10</span>
+                    </div>
+
+                    <div class="card-footer">
+                        <span>From $699</span>
+                        <button onclick="openReview('Google Pixel 10')">
+                            Read Review →
+                        </button>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- PHONE 4 -->
+            <article
+                class="phone-card"
+                data-category="gaming"
+                data-name="ROG Phone"
+            >
+
+                <div class="phone-image gaming">
+                    <span class="review-label">GAMING</span>
+                    <div class="product-phone">ROG</div>
+                </div>
+
+                <div class="card-content">
+
+                    <div class="brand">ASUS</div>
+
+                    <h3>ROG Gaming Phone</h3>
+
+                    <p>
+                        Designed for serious mobile gamers with powerful
+                        performance and advanced cooling.
+                    </p>
+
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <strong>9.2</strong>
+                        <span>/10</span>
+                    </div>
+
+                    <div class="card-footer">
+                        <span>From $899</span>
+                        <button onclick="openReview('ROG Gaming Phone')">
+                            Read Review →
+                        </button>
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" class="no-results">
+            No phones found.
+        </p>
+
+    </div>
+</section>
+
+
+<!-- COMPARISON -->
+<section class="compare-section" id="compare">
+
+    <div class="container">
+
+        <div class="section-heading center">
+            <span class="eyebrow">QUICK COMPARISON</span>
+            <h2>Which phone is right for you?</h2>
+            <p>
+                Compare the most important specifications before making
+                your decision.
+            </p>
+        </div>
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Phone</th>
+                        <th>Display</th>
+                        <th>Battery</th>
+                        <th>Camera</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><strong>Galaxy S26 Ultra</strong></td>
+                        <td>6.9" AMOLED</td>
+                        <td>5,500mAh</td>
+                        <td>200MP</td>
+                        <td><b>9.5</b></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>iPhone 17 Pro Max</strong></td>
+                        <td>6.9" OLED</td>
+                        <td>5,000mAh</td>
+                        <td>48MP</td>
+                        <td><b>9.4</b></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Pixel 10</strong></td>
+                        <td>6.3" OLED</td>
+                        <td>4,800mAh</td>
+                        <td>50MP</td>
+                        <td><b>9.0</b></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BUYING GUIDE -->
+<section class="section" id="guides">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">BUYING GUIDES</span>
+                <h2>Choose smarter</h2>
+            </div>
+        </div>
+
+        <div class="guide-grid">
+
+            <div class="guide-card">
+                <span>💰</span>
+                <h3>Best Phones Under $500</h3>
+                <p>
+                    Great smartphones that offer excellent value
+                    without breaking the bank.
+                </p>
+                <a href="#">Read Guide →</a>
+            </div>
+
+            <div class="guide-card">
+                <span>📸</span>
+                <h3>Best Camera Phones</h3>
+                <p>
+                    Our top choices for photography and video
+                    enthusiasts.
+                </p>
+                <a href="#">Read Guide →</a>
+            </div>
+
+            <div class="guide-card">
+                <span>🎮</span>
+                <h3>Best Gaming Phones</h3>
+                <p>
+                    Powerful processors, high refresh-rate displays
+                    and excellent cooling.
+                </p>
+                <a href="#">Read Guide →</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+            <a href="#" class="logo">
+                <span>Tech</span>Pulse
+            </a>
+
+            <p>
+                Independent smartphone reviews,
+                comparisons and technology guides.
+            </p>
+        </div>
+
+        <div>
+            <h4>Explore</h4>
+            <a href="#reviews">Reviews</a>
+            <a href="#compare">Compare</a>
+            <a href="#guides">Buying Guides</a>
+        </div>
+
+        <div>
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 TechPulse. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- REVIEW MODAL -->
+<div class="modal" id="reviewModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeReview()">×</button>
+
+        <span class="eyebrow">PHONE REVIEW</span>
+
+        <h2 id="modalTitle">Phone Review</h2>
+
+        <div class="modal-rating">
+            ★★★★★
+            <strong>9.5/10</strong>
+        </div>
+
+        <p>
+            This is a sample detailed review. You can replace this
+            content with your full phone review, specifications,
+            benchmark results, camera tests and buying recommendation.
+        </p>
+
+        <div class="pros-cons">
+
+            <div>
+                <h3>✓ Pros</h3>
+                <ul>
+                    <li>Excellent performance</li>
+                    <li>Great display</li>
+                    <li>Strong cameras</li>
+                    <li>Long software support</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>✕ Cons</h3>
+                <ul>
+                    <li>Expensive</li>
+                    <li>Large size</li>
+                    <li>Charger may be sold separately</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
